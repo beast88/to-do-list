@@ -1,0 +1,31 @@
+body {
+	box-sizing: border-box;
+}
+
+.header {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border: 1px red solid;
+}
+
+.main {
+	display: flex;
+	width: 100%;
+}
+
+.list-container {
+	flex: 1;
+	border: 1px dashed pink;
+}
+
+.to-do-container {
+	flex: 3;
+	border: 1px dashed coral;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid blue;
+}
