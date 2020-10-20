@@ -1,31 +1,47 @@
 body {
 	box-sizing: border-box;
+	background: #4392F1;
+	color: white;
+	font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-bottom: 15px;
 }
 
 .header {
 	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	border: 1px red solid;
 }
 
 .main {
 	display: flex;
-	width: 100%;
+	width: calc(100% - 40px);
+	margin: 0 20px;
 }
 
-.list-container {
+.project-container {
 	flex: 1;
-	border: 1px dashed pink;
+}
+
+.create-project {
+	margin-bottom: 10px;
+	font-size: 1.1rem;
 }
 
 .to-do-container {
 	flex: 3;
-	border: 1px dashed coral;
 }
 
 .container {
 	display: flex;
 	justify-content: space-around;
-	border: 1px solid blue;
 }
