@@ -37,6 +37,20 @@ h3 {
 	font-size: 1.1rem;
 }
 
+.create-project:hover {
+	cursor: pointer;
+}
+
+/* Styles for Create Project Card */
+.form-bg {
+	position: absolute;
+	background: rgba(0, 0, 0, .60);
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
 .to-do-container {
 	flex: 3;
 }

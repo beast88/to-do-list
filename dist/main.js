@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector(".create-project").addEventListener("click",(e=>{console.log("You clicked a button"),(()=>{const e=document.querySelector(".main"),t=document.createElement("div");t.setAttribute("class","form-bg");const c=document.createElement("div");c.setAttribute("class","form-container"),t.append(c),e.append(t),console.log(t)})()}))})();
