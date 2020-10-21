@@ -72,10 +72,15 @@ h3 {
 }
 
 .project-form input {
-	margin-top: 50px;
+	margin-top: 25px;
+	margin-bottom: 15px;
 	width: 150px;
 	font-size: 1.25rem;
 	color: #7e7e7e;
+}
+
+#project-submit {
+	font-size: 1.1rem;
 }
 
 /* End of Create Project Styles */

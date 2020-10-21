@@ -1,10 +1,6 @@
 const renderProjectForm = () => {
 	const main = document.querySelector('.main');
 
-	//Create a simple html form to get name of project from user
-	//This will need to be displayed as a 'card' hovering over the rest of the page
-	//Set form container position to cover the whole of the main section with a black background
-
 	const formbg = document.createElement('div');
 	formbg.setAttribute('class', 'form-bg');
 
@@ -20,18 +16,21 @@ const renderProjectForm = () => {
 	input.setAttribute('type', 'text');
 	input.setAttribute('id', 'project-name');
 	input.setAttribute('name', 'project-name');
+	input.setAttribute('placeholder', 'Enter Here');
 
 	const formLabel = document.createElement('label');
 	formLabel.setAttribute('for', 'project-name');
 	formLabel.innerText = `Enter Project Name:`;
 
+	const submitBtn = document.createElement('button');
+	submitBtn.setAttribute('id', 'project-submit');
+	submitBtn.innerText = `Create`;
+
 	formContainer.append(form);
 
-	form.append(formLabel, input);
+	form.append(formLabel, input, submitBtn);
 
 	main.append(formbg);
-
-	console.log(formbg);
 
 }
 
