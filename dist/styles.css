@@ -51,6 +51,35 @@ h3 {
 	height: 100vh;
 }
 
+.form-container {
+	width: 350px;
+	height: 175px;
+	background: white;
+	color: black;
+	border-radius: 10px;
+	margin: 100px auto;
+	font-size: 1.25rem;
+}
+
+.project-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.project-form label {
+	margin-top: 20px;
+}
+
+.project-form input {
+	margin-top: 50px;
+	width: 150px;
+	font-size: 1.25rem;
+	color: #7e7e7e;
+}
+
+/* End of Create Project Styles */
+
 .to-do-container {
 	flex: 3;
 }
