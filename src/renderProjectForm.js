@@ -13,6 +13,22 @@ const renderProjectForm = () => {
 
 	formbg.append(formContainer);
 
+	const form = document.createElement('form');
+	form.setAttribute('class', 'project-form');
+
+	const input = document.createElement('input');
+	input.setAttribute('type', 'text');
+	input.setAttribute('id', 'project-name');
+	input.setAttribute('name', 'project-name');
+
+	const formLabel = document.createElement('label');
+	formLabel.setAttribute('for', 'project-name');
+	formLabel.innerText = `Enter Project Name:`;
+
+	formContainer.append(form);
+
+	form.append(formLabel, input);
+
 	main.append(formbg);
 
 	console.log(formbg);
