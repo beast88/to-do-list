@@ -1,5 +1,5 @@
-import{renderProjectForm} from "./renderProjectForm.js"
-import{createProjectController} from "./createProjectController.js"
+import{renderProjectForm} from "./renderProjectForm.js";
+import{createProjectController} from "./createProjectController.js";
 
 let projects  = [];
 

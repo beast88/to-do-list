@@ -1,4 +1,4 @@
-import{renderProjects} from "./renderProjects"
+import{renderProjects} from "./renderProjects";
 
 const createProjectController = (projects) => {
 	const formContainer = document.querySelector('.form-bg')
