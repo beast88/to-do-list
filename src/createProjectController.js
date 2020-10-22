@@ -1,4 +1,5 @@
-import{renderProjects} from "./renderProjects";
+import{renderProjects} from "./renderProjects.js";
+import{createProject} from "./createProject.js";
 
 const createProjectController = (projects) => {
 	const formContainer = document.querySelector('.form-bg')
@@ -6,11 +7,12 @@ const createProjectController = (projects) => {
 
 	projectSubmit.addEventListener('click', (e) => {
 		e.preventDefault();
-		var string = document.getElementById('project-name').value;
+		var name = document.getElementById('project-name').value;
 
-		if (string === null || string === '') return;
+		if (name === null || name === '') return;
 
-		projects.push(string);
+		const project = createProject(name);
+		projects.push(project);
 		formContainer.remove();
 		renderProjects(projects);
 	});

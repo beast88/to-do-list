@@ -8,8 +8,9 @@ const renderProjects = (projects) => {
 	projects.forEach(project => {
 		const listElement = document.createElement('li');
 		listElement.setAttribute('class', 'project-name');
-		listElement.innerText = project;
+		listElement.innerText = project.name;
 		projectList.append(listElement);
+
 	});
 
 }
