@@ -39,6 +39,7 @@ h3 {
 
 .create-project:hover {
 	cursor: pointer;
+	color: #AAAAAA;
 }
 
 /* Styles for Create Project Card */
@@ -84,6 +85,17 @@ h3 {
 }
 
 /* End of Create Project Styles */
+
+.project-name {
+	padding: 10px 0;
+	font-size: 1.1rem;
+	border-bottom: 1px solid rgba(0, 0, 0, .20);
+}
+
+.project-name:hover {
+	cursor: pointer;
+	color: #AAAAAA;
+}
 
 .to-do-container {
 	flex: 3;

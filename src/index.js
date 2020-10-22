@@ -1,7 +1,7 @@
 import{renderProjectForm} from "./renderProjectForm.js";
 import{createProjectController} from "./createProjectController.js";
 
-let projects  = [];
+let projects  = ['Shopping', 'Youtube'];
 
 //Create Project
 const createProject = document.querySelector('.create-project');
