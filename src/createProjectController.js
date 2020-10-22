@@ -1,3 +1,5 @@
+import{renderProjects} from "./renderProjects"
+
 const createProjectController = (projects) => {
 	const formContainer = document.querySelector('.form-bg')
 	const projectSubmit = document.querySelector('#project-submit');
@@ -9,10 +11,12 @@ const createProjectController = (projects) => {
 		if (string === null || string === '') return;
 
 		projects.push(string);
-		console.log(projects);
 		formContainer.remove();
+		renderProjects(projects);
 	});
 
 };
 
 export{createProjectController};
+
+//if all forms are gonna have the same formBg element then write a function to remove them once the form has been submitted
