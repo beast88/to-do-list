@@ -7,7 +7,6 @@ let projects  = [];
 const createProject = document.querySelector('.create-project');
 
 createProject.addEventListener('click', (e) => {
-	console.log('You clicked a button');
 	renderProjectForm();
 	createProjectController(projects);
 
