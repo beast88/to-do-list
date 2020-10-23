@@ -23,6 +23,7 @@ const renderProjectForm = () => {
 	formLabel.innerText = `Enter Project Name:`;
 
 	const submitBtn = document.createElement('button');
+	submitBtn.setAttribute('class', 'form-button');
 	submitBtn.setAttribute('id', 'project-submit');
 	submitBtn.innerText = `Create`;
 

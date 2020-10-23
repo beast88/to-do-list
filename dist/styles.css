@@ -80,7 +80,7 @@ h3 {
 	color: #7e7e7e;
 }
 
-#project-submit {
+.form-button {
 	font-size: 1.1rem;
 }
 
@@ -103,6 +103,20 @@ h3 {
 	cursor: pointer;
 	color: #AAAAAA;
 }
+
+/* Delete Form Styles*/
+
+.delete-form {
+	text-align: center;
+}
+
+.delete-form p {
+	margin: auto;
+	padding-top: 25px;
+	width: 60%;
+}
+
+/* End of Delete Form Styles */
 
 .to-do-container {
 	flex: 3;
