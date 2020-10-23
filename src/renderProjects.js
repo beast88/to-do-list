@@ -15,6 +15,7 @@ const renderProjects = (projects) => {
 
 		const deleteIcon = document.createElement('i');
 		deleteIcon.setAttribute('class', 'fa fa-trash-o');
+		deleteIcon.classList.add('delete-icon');
 		deleteIcon.setAttribute('id', `${project.id}`);
 
 		projectList.append(projectNameContainer);
