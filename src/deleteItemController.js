@@ -1,12 +1,12 @@
 import{renderProjects} from "./renderProjects.js";
+import{removeForm} from "./removeForm.js";
 
 const deleteItem = (button, items) => {
 	const cancelBtn = document.getElementById('cancel');
 	const confirmBtn = document.getElementById('confirm');
-	const formContainer = document.querySelector('.form-bg');
 
 	cancelBtn.addEventListener('click', (e) => {
-		formContainer.remove();
+		removeForm();
 	})
 
 	confirmBtn.addEventListener('click', (e) => {
@@ -14,7 +14,7 @@ const deleteItem = (button, items) => {
 			if (button.getAttribute('id') === item.id) {
 				let index = items.indexOf(item);
 				items.splice(index, 1);
-				formContainer.remove();
+				removeForm();
 				renderProjects(items);
 			};
 		});
