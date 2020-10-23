@@ -1,12 +1,13 @@
 import {renderDelete} from "./renderDelete.js";
+import {deleteItem} from "./deleteItemController.js";
 
-const deleteItemHandler = () => {
+const deleteItemHandler = (items) => {
 	const deleteButtons = document.querySelectorAll('.delete-icon');
 
 	deleteButtons.forEach(button => {
 		button.addEventListener('click', (e) => {
-			console.log(button.getAttribute('id'))
 			renderDelete();
+			deleteItem(button, items);
 		});
 	});
 

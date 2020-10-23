@@ -25,7 +25,7 @@ const renderProjects = (projects) => {
 
 	});
 
-	deleteItemHandler();
+	deleteItemHandler(projects);
 
 }
 
