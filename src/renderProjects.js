@@ -6,10 +6,20 @@ const renderProjects = (projects) => {
 	clearElement(projectList);
 
 	projects.forEach(project => {
+		const projectNameContainer = document.createElement('div');
+		projectNameContainer.setAttribute('class', 'project-name-container');
+
 		const listElement = document.createElement('li');
 		listElement.setAttribute('class', 'project-name');
 		listElement.innerText = project.name;
-		projectList.append(listElement);
+
+		const deleteIcon = document.createElement('i');
+		deleteIcon.setAttribute('class', 'fa fa-trash-o');
+		deleteIcon.setAttribute('id', `${project.id}`);
+
+		projectList.append(projectNameContainer);
+
+		projectNameContainer.append(listElement, deleteIcon);
 
 	});
 
