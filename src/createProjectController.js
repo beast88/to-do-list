@@ -14,6 +14,7 @@ const createProjectController = (projects) => {
 		const project = createProject(name);
 		projects.push(project);
 		formContainer.remove();
+		
 		renderProjects(projects);
 	});
 

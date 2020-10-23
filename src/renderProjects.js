@@ -1,4 +1,5 @@
 import{clearElement} from "./clearElement.js";
+import{deleteItemHandler} from "./deleteItemHandler.js";
 
 const renderProjects = (projects) => {
 	const projectList = document.querySelector(".project-list");
@@ -23,6 +24,8 @@ const renderProjects = (projects) => {
 		projectNameContainer.append(listElement, deleteIcon);
 
 	});
+
+	deleteItemHandler();
 
 }
 
