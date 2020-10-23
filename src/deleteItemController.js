@@ -1,3 +1,5 @@
+import{renderProjects} from "./renderProjects.js";
+
 const deleteItem = (button, items) => {
 	const cancelBtn = document.getElementById('cancel');
 	const confirmBtn = document.getElementById('confirm');
@@ -13,6 +15,7 @@ const deleteItem = (button, items) => {
 				let index = items.indexOf(item);
 				items.splice(index, 1);
 				formContainer.remove();
+				renderProjects(items);
 			};
 		});
 	});
