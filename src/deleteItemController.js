@@ -1,4 +1,3 @@
-import{renderProjects} from "./renderProjects.js";
 import{removeForm} from "./removeForm.js";
 import{saveProject} from "./saveProject.js";
 

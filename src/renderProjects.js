@@ -2,7 +2,7 @@ import{clearElement} from "./clearElement.js";
 import{deleteItemHandler} from "./deleteItemHandler.js";
 
 //Render the list of projects on the page
-const renderProjects = (projects, KEY) => {
+const renderProjects = (projects, KEY, selectedProjectId) => {
 	const projectList = document.querySelector(".project-list");
 
 	clearElement(projectList);
@@ -13,7 +13,12 @@ const renderProjects = (projects, KEY) => {
 
 		const listElement = document.createElement('li');
 		listElement.setAttribute('class', 'project-name');
+		listElement.setAttribute('id', `${project.id}`);
 		listElement.innerText = project.name;
+
+		if (project.id === selectedProjectId) {
+			listElement.classList.add('active-project')
+		};
 
 		const deleteIcon = document.createElement('i');
 		deleteIcon.setAttribute('class', 'fa fa-trash-o');
