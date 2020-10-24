@@ -1,3 +1,4 @@
+//Renders the delete form
 const renderDelete = () => {
 	const main = document.querySelector('.main');
 

@@ -1,6 +1,7 @@
 import{clearElement} from "./clearElement.js";
 import{deleteItemHandler} from "./deleteItemHandler.js";
 
+//Render the list of projects on the page
 const renderProjects = (projects) => {
 	const projectList = document.querySelector(".project-list");
 

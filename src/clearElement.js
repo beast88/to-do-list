@@ -1,3 +1,5 @@
+
+//Clear the parent of it's child elements
 const clearElement = (element) => {
 
 	while (element.firstChild) {

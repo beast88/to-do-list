@@ -2,6 +2,8 @@ import{renderProjects} from "./renderProjects.js";
 import{createProject} from "./createProject.js";
 import{removeForm} from "./removeForm.js";
 
+
+//Controls what happens once the create project button is clicked
 const createProjectController = (projects) => {
 	const projectSubmit = document.querySelector('#project-submit');
 

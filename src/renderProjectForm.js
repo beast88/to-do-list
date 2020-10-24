@@ -1,3 +1,4 @@
+//Renders the creater project form
 const renderProjectForm = () => {
 	const main = document.querySelector('.main');
 
