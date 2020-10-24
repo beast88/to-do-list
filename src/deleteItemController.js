@@ -19,7 +19,7 @@ const deleteItem = (button, items, KEY) => {
 				
 				removeForm();
 				saveProject(KEY, items);
-				renderProjects(items);
+				location.reload();
 			};
 		});
 	});
