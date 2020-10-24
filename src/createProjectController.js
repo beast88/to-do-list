@@ -17,7 +17,7 @@ const createProjectController = (projects, KEY) => {
 		const project = createProject(name);
 		projects.push(project);
 		removeForm();
-		saveProject(KEY, projects)
+		saveProject(KEY, projects);
 		
 		renderProjects(projects);
 	});
