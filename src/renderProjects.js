@@ -2,7 +2,7 @@ import{clearElement} from "./clearElement.js";
 import{deleteItemHandler} from "./deleteItemHandler.js";
 
 //Render the list of projects on the page
-const renderProjects = (projects) => {
+const renderProjects = (projects, KEY) => {
 	const projectList = document.querySelector(".project-list");
 
 	clearElement(projectList);
@@ -26,7 +26,7 @@ const renderProjects = (projects) => {
 
 	});
 
-	deleteItemHandler(projects);
+	deleteItemHandler(projects, KEY);
 
 }
 

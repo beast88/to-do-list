@@ -1,8 +1,9 @@
 import{renderProjects} from "./renderProjects.js";
 import{removeForm} from "./removeForm.js";
+import{saveProject} from "./saveProject.js";
 
 //Controls what happens when a user attempts to delete an item
-const deleteItem = (button, items) => {
+const deleteItem = (button, items, KEY) => {
 	const cancelBtn = document.getElementById('cancel');
 	const confirmBtn = document.getElementById('confirm');
 
@@ -17,6 +18,7 @@ const deleteItem = (button, items) => {
 				items.splice(index, 1);
 				
 				removeForm();
+				saveProject(KEY, items);
 				renderProjects(items);
 			};
 		});

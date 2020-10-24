@@ -5,7 +5,7 @@ import{renderProjects} from "./renderProjects.js";
 const LOCAL_STORAGE_PROJECT_KEY = 'project.list';
 let projects  = JSON.parse(localStorage.getItem(LOCAL_STORAGE_PROJECT_KEY)) || [];
 
-renderProjects(projects);
+renderProjects(projects, LOCAL_STORAGE_PROJECT_KEY);
 
 //Create Project
 const createProject = document.querySelector('.create-project');

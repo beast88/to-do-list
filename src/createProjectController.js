@@ -19,7 +19,7 @@ const createProjectController = (projects, KEY) => {
 		removeForm();
 		saveProject(KEY, projects);
 		
-		renderProjects(projects);
+		renderProjects(projects, KEY);
 	});
 
 };
