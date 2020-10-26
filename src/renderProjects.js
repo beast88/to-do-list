@@ -18,6 +18,8 @@ const renderProjects = (projects, KEY, selectedProjectId) => {
 
 		if (project.id === selectedProjectId) {
 			listElement.classList.add('active-project')
+			//Pass the project into the render TO DO function
+			console.log(project);
 		};
 
 		const deleteIcon = document.createElement('i');
