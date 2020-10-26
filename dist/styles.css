@@ -37,6 +37,10 @@ h3 {
 	font-size: 1.1rem;
 }
 
+.create-project i {
+	margin-right: 10px;
+}
+
 .create-project:hover {
 	cursor: pointer;
 	color: #AAAAAA;
@@ -132,4 +136,19 @@ h3 {
 .to-do-container {
 	flex: 3;
 	padding-left: 20px;
+}
+
+.create-to-do {
+	display: flex;
+	justify-content: flex-start;
+	font-size: 1.1rem;
+}
+
+.create-to-do:hover {
+	cursor: pointer;
+	color: #AAAAAA;
+}
+
+.create-to-do p {
+	margin-left: 10px;
 }
