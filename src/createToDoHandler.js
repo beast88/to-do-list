@@ -1,3 +1,4 @@
+import{renderToDoForm} from "./renderToDoForm.js";
 
 //creates the add to do list button and handles it
 const createToDoHandler = (element) => {
@@ -13,6 +14,11 @@ const createToDoHandler = (element) => {
 	createToDo.append(createIcon, message);
 
 	element.append(createToDo);
+
+	createToDo.addEventListener('click', (e) => {
+		renderToDoForm();
+		//Save user data
+	});
 
 };
 
