@@ -50,6 +50,14 @@ const renderToDoForm = () => {
 	priorityLabel.innerText = `Set a priority for this item:`
 
 	//Due Date -- Hmmm I wonder how to do this
+	const dateInput = document.createElement('input');
+	dateInput.setAttribute('type', 'date');
+	dateInput.setAttribute('id', 'date');
+	dateInput.setAttribute('name', 'date');
+
+	const dateLabel = document.createElement('label');
+	dateLabel.setAttribute('for', 'date');
+	dateLabel.innerText = `Due Date:`;
 
 	//Description
 	const descInput = document.createElement('textarea');
@@ -59,10 +67,20 @@ const renderToDoForm = () => {
 	descInput.setAttribute('placeholder', 'Enter a description...');
 
 	//Submit
+	const submitBtn = document.createElement('button');
+	submitBtn.setAttribute('class', 'form-button');
+	submitBtn.setAttribute('id', 'create-to-do');
+	submitBtn.innerText = `Create`;
+
+	//Cancel Button
+	const cancelBtn = document.createElement('button');
+	cancelBtn.setAttribute('class', 'form-button');
+	cancelBtn.setAttribute('id', 'cancel');
+	cancelBtn.innerText = `Cancel`;
 
 	formContainer.append(form);
 
-	form.append(nameLabel, nameInput, priorityLabel, priorityInput, descInput);
+	form.append(nameLabel, nameInput, priorityLabel, priorityInput, dateLabel, dateInput, descInput, submitBtn, cancelBtn);
 
 	main.append(formbg);
 };

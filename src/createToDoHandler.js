@@ -17,7 +17,7 @@ const createToDoHandler = (element) => {
 
 	createToDo.addEventListener('click', (e) => {
 		renderToDoForm();
-		//Save user data
+		//Create to do handler to save the information
 	});
 
 };
