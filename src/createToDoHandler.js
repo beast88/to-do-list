@@ -18,6 +18,7 @@ const createToDoHandler = (element) => {
 	createToDo.addEventListener('click', (e) => {
 		renderToDoForm();
 		//Create to do handler to save the information
+		//Create handler to deal with cancel button
 	});
 
 };

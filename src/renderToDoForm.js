@@ -6,7 +6,7 @@ const renderToDoForm = () => {
 	formbg.setAttribute('class', 'form-bg');
 
 	const formContainer = document.createElement('div');
-	formContainer.setAttribute('class', 'form-container');
+	formContainer.setAttribute('class', 'to-do-form-container');
 
 	formbg.append(formContainer);
 
@@ -47,7 +47,7 @@ const renderToDoForm = () => {
 
 	const priorityLabel = document.createElement('label');
 	priorityLabel.setAttribute('for', 'priority');
-	priorityLabel.innerText = `Set a priority for this item:`
+	priorityLabel.innerText = `Set a priority:`
 
 	//Due Date -- Hmmm I wonder how to do this
 	const dateInput = document.createElement('input');
@@ -78,9 +78,15 @@ const renderToDoForm = () => {
 	cancelBtn.setAttribute('id', 'cancel');
 	cancelBtn.innerText = `Cancel`;
 
+	const buttonContainer =  document.createElement('div');
+	buttonContainer.setAttribute('class', 'buttons-container');
+	buttonContainer.setAttribute('class', 'to-do-buttons');
+
+	buttonContainer.append(submitBtn, cancelBtn)
+
 	formContainer.append(form);
 
-	form.append(nameLabel, nameInput, priorityLabel, priorityInput, dateLabel, dateInput, descInput, submitBtn, cancelBtn);
+	form.append(nameLabel, nameInput, priorityLabel, priorityInput, dateLabel, dateInput, descInput, buttonContainer);
 
 	main.append(formbg);
 };
