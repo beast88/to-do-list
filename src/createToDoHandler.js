@@ -1,4 +1,5 @@
 import{renderToDoForm} from "./renderToDoForm.js";
+import{createToDoController} from "./createToDoController.js";
 
 //creates the add to do list button and handles it
 const createToDoHandler = (element) => {
@@ -17,8 +18,7 @@ const createToDoHandler = (element) => {
 
 	createToDo.addEventListener('click', (e) => {
 		renderToDoForm();
-		//Create to do handler to save the information
-		//Create handler to deal with cancel button
+		createToDoController();
 	});
 
 };
