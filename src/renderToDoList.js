@@ -9,7 +9,7 @@ const renderToDoList = (project) => {
 
 	clearElement(toDoContainer);
 
-	createToDoHandler(toDoContainer);
+	createToDoHandler(toDoContainer, project);
 
 };
 
