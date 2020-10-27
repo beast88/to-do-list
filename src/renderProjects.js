@@ -19,7 +19,7 @@ const renderProjects = (projects, KEY, selectedProjectId) => {
 
 		if (project.id === selectedProjectId) {
 			listElement.classList.add('active-project');
-			renderToDoList(project);
+			renderToDoList(project, KEY, projects);
 		};
 
 		const deleteIcon = document.createElement('i');

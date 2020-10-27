@@ -1,7 +1,7 @@
 import{clearElement} from "./clearElement.js";
 import{createToDoHandler} from "./createToDoHandler.js";
 
-const renderToDoList = (project) => {
+const renderToDoList = (project, KEY, projects) => {
 	const projectTitle = document.querySelector(".project-title");
 	projectTitle.innerText = `${project.name}`;
 
@@ -9,7 +9,7 @@ const renderToDoList = (project) => {
 
 	clearElement(toDoContainer);
 
-	createToDoHandler(toDoContainer, project);
+	createToDoHandler(toDoContainer, project, KEY, projects);
 
 };
 
