@@ -1,15 +1,16 @@
 import{createProjectHandler} from "./createProjectHandler.js";
 import{renderProjects} from "./renderProjects.js";
 import{selectedProject} from "./selectedProject.js";
+import{projectKey} from "./projectKey.js";
 
-const LOCAL_STORAGE_PROJECT_KEY = 'project.list';
-let projects  = JSON.parse(localStorage.getItem(LOCAL_STORAGE_PROJECT_KEY)) || [];
+projectKey();
+let projects  = JSON.parse(localStorage.getItem(projectKey())) || [];
 
 const LOCAL_STORAGE_SELECTED_PROJECT_ID_KEY = 'project.selectedProjectId';
 let selectedProjectId = localStorage.getItem(LOCAL_STORAGE_SELECTED_PROJECT_ID_KEY);
 
-renderProjects(projects, LOCAL_STORAGE_PROJECT_KEY, selectedProjectId);
+renderProjects(projects, selectedProjectId);
 
-selectedProject(selectedProjectId, projects, LOCAL_STORAGE_PROJECT_KEY);
+selectedProject(selectedProjectId, projects);
 
-createProjectHandler(projects, LOCAL_STORAGE_PROJECT_KEY);
+createProjectHandler(projects);

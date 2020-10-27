@@ -5,7 +5,7 @@ import{saveProject} from "./saveProject.js";
 
 
 //Controls what happens once the create project button is clicked
-const createProjectController = (projects, KEY) => {
+const createProjectController = (projects) => {
 	const projectSubmit = document.querySelector('#project-submit');
 
 	projectSubmit.addEventListener('click', (e) => {
@@ -17,9 +17,9 @@ const createProjectController = (projects, KEY) => {
 		const project = createProject(name);
 		projects.push(project);
 		removeForm();
-		saveProject(KEY, projects);
+		saveProject(projects);
 		
-		renderProjects(projects, KEY);
+		renderProjects(projects);
 	});
 
 };

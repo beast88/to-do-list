@@ -2,7 +2,7 @@ import{renderToDoForm} from "./renderToDoForm.js";
 import{createToDoController} from "./createToDoController.js";
 
 //creates the add to do list button and handles it
-const createToDoHandler = (element, project, KEY, projects) => {
+const createToDoHandler = (element, project, projects) => {
 	const createIcon = document.createElement('i');
 	createIcon.setAttribute('class', 'fa fa-plus-circle');
 
@@ -18,7 +18,7 @@ const createToDoHandler = (element, project, KEY, projects) => {
 
 	createToDo.addEventListener('click', (e) => {
 		renderToDoForm();
-		createToDoController(project, KEY, projects);
+		createToDoController(project, projects);
 	});
 
 };

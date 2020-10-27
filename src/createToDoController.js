@@ -2,7 +2,7 @@ import{removeForm} from "./removeForm.js";
 import{createToDo} from "./createToDo.js";
 import{saveProject} from "./saveProject.js";
 
-const createToDoController = (project, KEY, projects) => {
+const createToDoController = (project, projects) => {
 	const cancelBtn = document.getElementById('cancel');
 	const createBtn = document.getElementById('create-to-do');
 
@@ -25,10 +25,7 @@ const createToDoController = (project, KEY, projects) => {
 
 		project.tasks.push(toDo);
 		removeForm();
-		saveProject(KEY, projects);
-
-
-		console.log(project.tasks);
+		saveProject(projects);
 	});
 
 };

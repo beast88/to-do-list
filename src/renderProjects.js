@@ -3,7 +3,7 @@ import{deleteItemHandler} from "./deleteItemHandler.js";
 import{renderToDoList} from "./renderToDoList.js";
 
 //Render the list of projects on the page
-const renderProjects = (projects, KEY, selectedProjectId) => {
+const renderProjects = (projects, selectedProjectId) => {
 	const projectList = document.querySelector(".project-list");
 
 	clearElement(projectList);
@@ -19,7 +19,7 @@ const renderProjects = (projects, KEY, selectedProjectId) => {
 
 		if (project.id === selectedProjectId) {
 			listElement.classList.add('active-project');
-			renderToDoList(project, KEY, projects);
+			renderToDoList(project, projects);
 		};
 
 		const deleteIcon = document.createElement('i');
@@ -33,7 +33,7 @@ const renderProjects = (projects, KEY, selectedProjectId) => {
 
 	});
 
-	deleteItemHandler(projects, KEY);
+	deleteItemHandler(projects);
 
 }
 

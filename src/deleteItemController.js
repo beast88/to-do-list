@@ -2,7 +2,7 @@ import{removeForm} from "./removeForm.js";
 import{saveProject} from "./saveProject.js";
 
 //Controls what happens when a user attempts to delete an item
-const deleteItem = (button, items, KEY) => {
+const deleteItem = (button, items) => {
 	const cancelBtn = document.getElementById('cancel');
 	const confirmBtn = document.getElementById('confirm');
 
@@ -17,7 +17,7 @@ const deleteItem = (button, items, KEY) => {
 				items.splice(index, 1);
 				
 				removeForm();
-				saveProject(KEY, items);
+				saveProject(items);
 				location.reload();
 			};
 		});
