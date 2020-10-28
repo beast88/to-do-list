@@ -12,11 +12,14 @@ const renderToDos = (project) => {
 		const toDoItem = document.createElement('li');
 		toDoItem.setAttribute('class', 'to-do-item');
 
+		const checkbox = document.createElement('input');
+		checkbox.setAttribute('type', 'checkbox');
+
 		const toDoName = document.createElement('p');
 		toDoName.setAttribute('class', 'to-do-name');
 		toDoName.innerText = `${toDo.name}`;
 
-		toDoItem.append(toDoName);
+		toDoItem.append(checkbox, toDoName);
 
 		listContainer.append(toDoItem);
 	});
