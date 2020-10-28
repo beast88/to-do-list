@@ -1,7 +1,7 @@
 import{removeForm} from "./removeForm.js";
 import{createToDo} from "./createToDo.js";
 import{saveProject} from "./saveProject.js";
-import{renderToDoList} from "./renderToDoList.js";
+import{renderToDoContainer} from "./renderToDoList.js";
 
 const createToDoController = (project, projects) => {
 	const cancelBtn = document.getElementById('cancel');
@@ -28,7 +28,7 @@ const createToDoController = (project, projects) => {
 		removeForm();
 		saveProject(projects);
 
-		renderToDoList(project, projects);
+		renderToDoContainer(project, projects);
 	});
 
 };

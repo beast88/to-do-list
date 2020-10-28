@@ -1,6 +1,6 @@
 import{clearElement} from "./clearElement.js";
 import{deleteItemHandler} from "./deleteItemHandler.js";
-import{renderToDoList} from "./renderToDoList.js";
+import{renderToDoContainer} from "./renderToDoList.js";
 
 //Render the list of projects on the page
 const renderProjects = (projects, selectedProjectId) => {
@@ -19,7 +19,7 @@ const renderProjects = (projects, selectedProjectId) => {
 
 		if (project.id === selectedProjectId) {
 			listElement.classList.add('active-project');
-			renderToDoList(project, projects);
+			renderToDoContainer(project, projects);
 		};
 
 		const deleteIcon = document.createElement('i');

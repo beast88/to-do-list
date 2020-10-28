@@ -2,7 +2,7 @@ import{clearElement} from "./clearElement.js";
 import{createToDoHandler} from "./createToDoHandler.js";
 import{renderToDos} from "./renderToDos.js";
 
-const renderToDoList = (project, projects) => {
+const renderToDoContainer = (project, projects) => {
 	const projectTitle = document.querySelector(".project-title");
 	projectTitle.innerText = `${project.name}`;
 
@@ -17,4 +17,4 @@ const renderToDoList = (project, projects) => {
 
 };
 
-export {renderToDoList};
+export {renderToDoContainer};
