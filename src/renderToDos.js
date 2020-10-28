@@ -19,7 +19,12 @@ const renderToDos = (project) => {
 		toDoName.setAttribute('class', 'to-do-name');
 		toDoName.innerText = `${toDo.name}`;
 
-		toDoItem.append(checkbox, toDoName);
+		const deleteIcon = document.createElement('i');
+		deleteIcon.setAttribute('class', 'fa fa-trash-o');
+		deleteIcon.classList.add('delete-icon');
+		deleteIcon.setAttribute('id', `${toDo.id}`);
+
+		toDoItem.append(checkbox, toDoName, deleteIcon);
 
 		listContainer.append(toDoItem);
 	});
