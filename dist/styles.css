@@ -199,3 +199,50 @@ h3 {
 }
 
 /* End of create to do styles */
+
+.to-do-item {
+	margin: 10px 0;
+	font-size: 1.25rem;
+	display: flex;
+}
+
+.checkbox {
+	height: 12px;
+	width: 12px;
+	margin-top: 2px;
+	border: 2px solid #AAAAAA;
+	border-radius: 50%;
+}
+
+.checkbox:hover {
+	cursor: pointer;
+}
+
+.to-do-name {
+	margin-left: 10px;
+}
+
+.to-do-name:hover {
+	cursor: pointer;
+	color: #AAAAAA;
+}
+
+.priority {
+	width: 15px;
+	height: 15px;
+	margin-left: 15px;
+	margin-top: 2px;
+	border-radius: 50%;
+}
+
+.to-do-item .low {
+	background: green;
+}
+
+.to-do-item .med {
+	background: yellow;
+}
+
+.to-do-item .high {
+	background: red;
+}

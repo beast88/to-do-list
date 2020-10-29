@@ -12,19 +12,21 @@ const renderToDos = (project) => {
 		const toDoItem = document.createElement('li');
 		toDoItem.setAttribute('class', 'to-do-item');
 
-		const checkbox = document.createElement('input');
-		checkbox.setAttribute('type', 'checkbox');
+		const checkbox = document.createElement('div');
+		checkbox.setAttribute('class', 'checkbox');
 
 		const toDoName = document.createElement('p');
 		toDoName.setAttribute('class', 'to-do-name');
 		toDoName.innerText = `${toDo.name}`;
 
-		toDoItem.append(checkbox, toDoName);
+		const priority = document.createElement('div');
+		priority.setAttribute('class', 'priority');
+		priority.classList.add(`${toDo.priority}`);
+
+		toDoItem.append(checkbox, toDoName, priority);
 
 		listContainer.append(toDoItem);
 	});
-
-	console.log(toDoContainer);
 
 };
 
