@@ -1,4 +1,5 @@
 import{saveProject} from "./saveProject.js";
+import{renderComplete} from "./renderComplete.js"
 
 const checkboxHandler = (toDos, projects) => {
 	const checkboxes = document.querySelectorAll('.checkbox');
@@ -15,6 +16,7 @@ const checkboxHandler = (toDos, projects) => {
 						checkbox.classList.remove('complete');
 					};
 
+					renderComplete(checkbox, toDo);
 					saveProject(projects);
 				};
 			});

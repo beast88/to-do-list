@@ -31,8 +31,7 @@ const renderToDos = (project, projects) => {
 
 		listContainer.append(toDoItem);
 	});
-
-	//Run a function to check if a to do has a complete status?
+	
 	completeCheck(toDos);
 
 	checkboxHandler(toDos, projects);
