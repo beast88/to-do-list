@@ -231,6 +231,11 @@ h3 {
 	color: #AAAAAA;
 }
 
+.name-complete {
+	text-decoration: line-through;
+	color: #AAAAAA;
+}
+
 .priority {
 	width: 15px;
 	height: 15px;
@@ -249,4 +254,8 @@ h3 {
 
 .to-do-item .high {
 	background: red;
+}
+
+.to-do-item .priority-complete {
+	background: #AAAAAA;
 }

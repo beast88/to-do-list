@@ -15,8 +15,6 @@ const renderComplete = (checkbox, toDo) => {
 		};
 
 	});
-
-	console.log(siblings);
 };
 
 export{renderComplete};
