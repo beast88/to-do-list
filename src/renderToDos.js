@@ -14,6 +14,7 @@ const renderToDos = (project) => {
 
 		const checkbox = document.createElement('div');
 		checkbox.setAttribute('class', 'checkbox');
+		checkbox.setAttribute('id', `${toDo.id}`);
 
 		const toDoName = document.createElement('p');
 		toDoName.setAttribute('class', 'to-do-name');
