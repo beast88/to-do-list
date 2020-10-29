@@ -1,4 +1,6 @@
-const renderToDos = (project) => {
+import{checkboxHandler} from "./checkboxHandler.js";
+
+const renderToDos = (project, projects) => {
 	const toDos = project.tasks;
 
 	const toDoContainer = document.querySelector('.to-dos');
@@ -28,6 +30,11 @@ const renderToDos = (project) => {
 
 		listContainer.append(toDoItem);
 	});
+
+	//Run a function to check if the checkbox has been clicked and change the complete status of the task
+	checkboxHandler(toDos, projects);
+
+	//Run a function to open an edit box
 
 };
 

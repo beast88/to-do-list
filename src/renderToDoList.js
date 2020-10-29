@@ -13,7 +13,7 @@ const renderToDoContainer = (project, projects) => {
 	createToDoHandler(toDoContainer, project, projects);
 
 	//Render the list of project tasks
-	renderToDos(project);
+	renderToDos(project, projects);
 
 };
 
