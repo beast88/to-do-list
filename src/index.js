@@ -6,8 +6,7 @@ import{projectKey} from "./projectKey.js";
 projectKey();
 let projects  = JSON.parse(localStorage.getItem(projectKey())) || [];
 
-const LOCAL_STORAGE_SELECTED_PROJECT_ID_KEY = 'project.selectedProjectId';
-let selectedProjectId = localStorage.getItem(LOCAL_STORAGE_SELECTED_PROJECT_ID_KEY);
+let selectedProjectId = '';
 
 renderProjects(projects, selectedProjectId);
 
