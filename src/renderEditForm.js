@@ -92,8 +92,6 @@ const renderEditForm = (toDo) => {
 	form.append(nameLabel, nameInput, priorityLabel, priorityInput, dateLabel, dateInput, descInput, buttonContainer);
 
 	main.append(formbg);
-
-	console.log(toDo);
 };
 
 export{renderEditForm};

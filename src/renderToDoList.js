@@ -1,5 +1,5 @@
-import{clearElement} from "./clearElement.js";
-import{createToDoHandler} from "./createToDoHandler.js";
+//import{clearElement} from "./clearElement.js";
+//import{createToDoHandler} from "./createToDoHandler.js";
 import{renderToDos} from "./renderToDos.js";
 
 const renderToDoContainer = (project, projects) => {
@@ -8,11 +8,8 @@ const renderToDoContainer = (project, projects) => {
 
 	const toDoContainer = document.querySelector(".to-dos");
 
-	clearElement(toDoContainer);
+	//clearElement(toDoContainer);
 
-	createToDoHandler(toDoContainer, project, projects);
-
-	//Render the list of project tasks
 	renderToDos(project, projects);
 
 };

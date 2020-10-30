@@ -1,11 +1,17 @@
 import{checkboxHandler} from "./checkboxHandler.js";
 import{completeCheck} from "./completeCheck.js";
 import{editToDoHandler} from "./editToDoHandler.js";
+import{clearElement} from "./clearElement.js";
+import{createToDoHandler} from "./createToDoHandler.js";
 
 const renderToDos = (project, projects) => {
 	const toDos = project.tasks;
 
 	const toDoContainer = document.querySelector('.to-dos');
+
+	clearElement(toDoContainer);
+
+	createToDoHandler(toDoContainer, project, projects);
 
 	const listContainer = document.createElement('ul');
 	listContainer.setAttribute('class', 'to-do-list-container');
@@ -39,7 +45,7 @@ const renderToDos = (project, projects) => {
 	checkboxHandler(toDos, projects);
 
 	//Run a function to open an edit box
-	editToDoHandler(toDos, projects);
+	editToDoHandler(toDos, projects, project);
 
 };
 
