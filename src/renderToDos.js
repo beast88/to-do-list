@@ -39,7 +39,7 @@ const renderToDos = (project, projects) => {
 	checkboxHandler(toDos, projects);
 
 	//Run a function to open an edit box
-	editToDoHandler(toDos);
+	editToDoHandler(toDos, projects);
 
 };
 
