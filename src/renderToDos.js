@@ -1,5 +1,6 @@
 import{checkboxHandler} from "./checkboxHandler.js";
 import{completeCheck} from "./completeCheck.js";
+import{editToDoHandler} from "./editToDoHandler.js";
 
 const renderToDos = (project, projects) => {
 	const toDos = project.tasks;
@@ -21,6 +22,7 @@ const renderToDos = (project, projects) => {
 
 		const toDoName = document.createElement('p');
 		toDoName.setAttribute('class', 'to-do-name');
+		toDoName.setAttribute('id', `${toDo.id}`);
 		toDoName.innerText = `${toDo.name}`;
 
 		const priority = document.createElement('div');
@@ -37,6 +39,7 @@ const renderToDos = (project, projects) => {
 	checkboxHandler(toDos, projects);
 
 	//Run a function to open an edit box
+	editToDoHandler(toDos);
 
 };
 
